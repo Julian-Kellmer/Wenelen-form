@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.rectangulo {
+  clip-path: polygon(0 0, 100% 0, 70% 0%, 52% 100%, 0 100%);
+}
+
+@media (max-width: 1023px) {
+  .rectangulo {
+    clip-path: none;
+  }
+}
+.logoConteiner {
+  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+@media (max-width: 1023px) {
+  .logoConteiner {
+    clip-path: none;
+  }
+}
+@media (max-width: 1023px) {
+  .logoConteiner {
+    display: none;
+  }
+}
