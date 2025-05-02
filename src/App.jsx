@@ -69,7 +69,7 @@ function App() {
                 className='flex lg:flex-1  pt-18 md:pt-4 responsive  lg:w-[100%] flex-col xl:gap-4 gap-4 '>
                 {/* Título animado letra por letra */}
                 <motion.h1
-                  className=' sm:text-3xl lg:text-3xl text-2xl md:text-4xl xl:text-4xl  font-sans font-bold text-[#0b0c3f] mb-8 flex flex-wrap '
+                  className=' sm:text-3xl lg:text-3xl text-2xl md:text-4xl xl:text-4xl 2xl:text-5xl  font-sans font-bold text-[#0b0c3f] mb-8 flex flex-wrap '
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
