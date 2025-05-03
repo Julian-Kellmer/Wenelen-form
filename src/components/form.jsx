@@ -27,7 +27,7 @@ const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className='  lg:max-w-md xl:lg:max-w-xl  flex flex-col gap-8 bg-white p-2  space-y-4 rounded-lg shadow-lg '>
+      className='  lg:max-w-md 2xl:lg:max-w-xl  flex flex-col gap-8 bg-white p-2  space-y-4 rounded-lg shadow-lg '>
       <h2 className=' self-center text-md md:text-2xl font-medium text-[#0b0c3f] font-display'>
         Contactate con nosotros
       </h2>
@@ -53,6 +53,11 @@ const Form = () => {
           name='Telefono'
           placeholder='Telefono'
           required
+        />
+        <input
+          type='hidden'
+          name='webhook'
+          value='https://hooks.zapier.com/hooks/catch/22741200/2pjcsr7/'
         />
 
         <textarea
