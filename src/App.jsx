@@ -20,21 +20,28 @@ function App() {
     <>
       <div className=' overflow-hidden relative w-screen z-10'>
         {/* Logos */}
-        <div className='logoConteiner flex  absolute  gap-16 justify-center  items-center bg-[#0b0c3f] z-100 l:w-[25%] w-[35%] h-[15%] left-[65%] l:left-[75%] top-[85%]'>
-          <div className=' flex flex-col items-center'>
-            <p className='text-white font-light'>Desarrolladora</p>
+        <div
+          className='logoConteiner 
+        absolute
+        flex px-6 gap-4 lg:gap-8 lg:justify-center lg:pl-16 justify-end items-center 
+        bg-[#0b0c3f] 
+        z-100 
+        lg:w-[25%] w-[35%] h-[15%] 
+        right-0 bottom-0'>
+          <div className=' flex flex-col items-center gap-2 content-top'>
+            <p className='text-gray-400 font-light text-sm'>Desarrolla</p>
             <img
-              className='l:w-20  w-12 '
+              className='lg:w-16  w-12 '
               src='/images/lupaRecurso1.svg'
               alt=''
             />
           </div>
-          <div className='h-[70%] w-[1px] bg-white my-4' />
+          <div className='h-[70%] w-[1px] bg-white/50 my-4' />
           <div className='flex flex-col items-center'>
-            <p className='text-white font-light'>Gerencia</p>
+            <p className='text-gray-400 font-light text-sm'>Gerencia</p>
             <img
               src='/images/lupaRecurso2.svg'
-              className='l:w-32  w-24'
+              className='w-24 h-16'
               alt=''
             />
           </div>
@@ -62,14 +69,24 @@ function App() {
           </div>
 
           {/* Rectángulo blanco con texto y formulario */}
-          <div className='rectangulo absolute top-0 left-0 bg-white w-full lg:w-[80vw] h-full flex flex-col'>
-            <div className=' h-full flex flex-col justify-around gap-8 px-4  lg:w-2/3  md:px-8 md:py-24 xl:px-8 xl:py-24 '>
+          <div
+            className='rectangulo absolute top-0 left-0
+        bg-white
+          w-full lg:w-[90vw] 2xl:w-[80vw] h-full 
+          flex flex-col '>
+            <div
+              className='
+              flex flex-col justify-around gap-4  
+              lg:w-2/3 px-4 md:px-8 md:py-24 xl:px-16 xl:py-28  pt-24 
+              h-full
+              '>
               <div
                 id='contenedorTexto'
-                className='flex lg:flex-1  pt-18 md:pt-4 responsive  lg:w-[100%] flex-col xl:gap-4 gap-4 '>
+                className='flex lg:flex-1   md:pt-2  responsive  lg:w-[100%] flex-col xl:gap-8 md:gap-4 gap-2 '>
                 {/* Título animado letra por letra */}
                 <motion.h1
-                  className=' sm:text-3xl lg:text-3xl text-2xl md:text-4xl xl:text-4xl 2xl:text-5xl  font-sans font-bold text-[#0b0c3f] mb-8 flex flex-wrap '
+                  className=' 
+                  text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl  font-sans font-medium md:font-bold text-[#0b0c3f] mb-8 flex flex-wrap '
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
@@ -80,9 +97,9 @@ function App() {
                 </motion.h1>
 
                 {/* Subtítulo */}
-                <div className='flex flex-row  justify-between lg:pr-8 '>
+                <div className='font-light md:font-medium flex flex-col  justify-between md:gap-4 '>
                   <motion.p
-                    className='xl:text-3xl md:text-2xl text-lg font-medium text-[#0b0c3f] mb-4 lg:self-end'
+                    className='xl:text-3xl md:text-2xl text-lg  text-[#0b0c3f] mb-4 '
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
@@ -90,11 +107,11 @@ function App() {
                       duration: 0.8,
                       ease: 'easeOut',
                     }}>
-                    Rentabilidad del 12% Anual.
+                    Rentabilidad estimada:12% anual.
                   </motion.p>
 
                   <motion.p
-                    className='rounded border border-[#0b0c3f] lg:py-2 lg:px-4 lg:text-[0.9rem] xl:text-xl text-lg font-light text-[#0b0c3f] text-center  leading-tight'
+                    className='xl:text-3xl md:text-2xl text-lg  text-[#0b0c3f] mb-4 '
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
@@ -102,8 +119,7 @@ function App() {
                       duration: 0.8,
                       ease: 'easeOut',
                     }}>
-                    Enterga inmediata
-                    <br className='lg:block hidden' /> Agosto 2025
+                    Enterga inmediata agosto 2025
                   </motion.p>
                 </div>
               </div>
@@ -117,11 +133,25 @@ function App() {
                 className='flex lg:flex-1  flex-col'>
                 <Form />
               </motion.div>
-              <div className='text-[#0b0c3f] font-light text-lg pl-16 p-2 flex align-center items-center content-center justify-start gap-4'>
-                <a href='https://www.instagram.com/wenelenrentals/'>
-                  @wenelenrentals
-                </a>
-                <h4 className='text-sm'>©2025 WENELEN</h4>
+              <div className='text-[#0b0c3f] font-light md:text-lg  p-2 flex align-center items-center content-center justify-between gap-4'>
+                <div className='md:flex md:content-center justify-center gap-2 items-center'>
+                  <a href='https://www.instagram.com/wenelenrentals/'>
+                    @wenelenrentals
+                  </a>
+                  <p className='text-sm'>©2025 WENELEN</p>
+                </div>
+                <div className='flex gap-2 lg:hidden'>
+                  <img
+                    src='/images/lupaRecurso1.svg'
+                    alt='hola'
+                    className='w-16 '
+                  />
+                  <img
+                    src='/images/lupaRecurso2.svg'
+                    alt='hola'
+                    className='w-16 '
+                  />
+                </div>
               </div>
             </div>
 

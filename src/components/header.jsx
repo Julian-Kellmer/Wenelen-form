@@ -4,7 +4,7 @@ const header = () => {
   return (
     <header className='w-full absolute top-0 left-0 bg-[#0e0f42] shadow-md py-4 px-6 z-100'>
       <div className=' mx-auto flex flex-row items-center justify-between'>
-        <div className='flex-1 md:black hidden'></div>
+        <div className='flex-1 md:block hidden'></div>
         <div className='  flex-1 flex justify-center sm:justify-center mb-4 sm:mb-0'>
           <img
             src='/images/lupaRecurso 3.svg'
