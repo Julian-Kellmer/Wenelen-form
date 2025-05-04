@@ -50,8 +50,8 @@ const Form = () => {
         <input
           className='w-full  border-b border-[#0b0c3f]/25 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0b0c3f] text-sm md:text-md'
           type='phone'
-          name='Telefono'
-          placeholder='Telefono'
+          name='Teléfono'
+          placeholder='Teléfono'
           required
         />
         <input
