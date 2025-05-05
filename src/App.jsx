@@ -119,7 +119,7 @@ function App() {
                       duration: 0.8,
                       ease: 'easeOut',
                     }}>
-                    Enterga inmediata agosto 2025
+                    Entrega inmediata agosto 2025
                   </motion.p>
                 </div>
               </div>
